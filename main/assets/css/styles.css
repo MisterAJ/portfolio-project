@@ -1,10 +1,62 @@
-.map {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+
 
 .img-responsive {
     border-radius: 5%;
+}
+
+.profile_pic {
+    border-radius: 40%;
+}
+
+/****** NAVBAR ******/
+
+.navbar {
+    background: rgba(210, 217, 233, 0.54);
+}
+
+/******PROJECT SECTION******/
+
+.projects-clean {
+    background-image: url("../img/back.jpeg");
+    background-size: cover;
+    color: white;
+}
+
+.projects-clean a {
+    color: whitesmoke;
+}
+
+/****** FOOTER ******/
+
+.footer-basic {
+    background: rgba(210, 217, 233, 0.54);
+}
+
+/****** PROJECT HOVER EFFECT ******/
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.quote_project:hover .overlay1 {
+    opacity: 1;
+}
+
+.quote_project .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
