@@ -5,10 +5,24 @@
 }
 
 .profile_pic {
-    border-radius: 40%;
+    border-radius: 50%;
+    -webkit-filter: sepia(0%); /* Safari 6.0 - 9.0 */
+    filter: sepia(0%);
+    transition: 0.5s ease-in;
+}
+
+.profile_pic:hover {
+    -webkit-filter: sepia(50%); /* Safari 6.0 - 9.0 */
+    filter: sepia(50%);
+    transition: 0.5s ease-in;
+    box-shadow: 1px 1px black;
 }
 
 /****** NAVBAR ******/
+
+.main_name {
+    font-family: 'Merienda', cursive;
+}
 
 .navbar {
     background: rgba(210, 217, 233, 0.54);
@@ -34,29 +48,79 @@
 
 /****** PROJECT HOVER EFFECT ******/
 
-.overlay1 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+.quote_image {
+    transition: .5s ease-in;
+
 }
 
-.quote_project:hover .overlay1 {
+.quote_image:hover {
+    background-color: #0f0f0f;
+    transition: .5s ease-in;
+
+}
+
+/****** ROBERT CSS ******/
+
+.proj-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 90%;
+    min-width: 300px;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.proj {
+    position: relative;
+    width: calc(33% - 20px);
+    min-width: 280px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.proj img, .proj .overlay {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.proj .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 50px;
+    background: radial-gradient(rgba(50, 50, 50, 0.7), rgba(50, 50, 50, 1));
+    opacity: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.proj .overlay:hover {
     opacity: 1;
 }
 
-.quote_project .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.overlay a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    background: rgba(210, 217, 233, 0.54);
+    border-radius: 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
 }
+
+.overlay a:hover {
+    color: rgba(55, 55, 55, 0.9);
+    background: rgba(250, 250, 250, 0.9);
+}
+
