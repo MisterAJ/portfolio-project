@@ -1,0 +1,76 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title portfolio
+        link(rel='stylesheet', href='assets/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='assets/fonts/ionicons.min.css')
+        link(rel='stylesheet', href='assets/css/Footer-Basic.css')
+        link(rel='stylesheet', href='assets/css/Navigation-Clean1.css')
+        link(rel='stylesheet', href='assets/css/Projects-Clean.css')
+        link(rel='stylesheet', href='assets/css/quoteStyles.css')
+        link(href='https://fonts.googleapis.com/css?family=Merienda', rel='stylesheet')
+    body
+        div
+            nav.navbar.navbar-default.navigation-clean
+                .container
+                    .navbar-header
+                        h1.main_name(href='#') A.J. Longstreet
+                        button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#navcol-1')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                    #navcol-1.collapse.navbar-collapse
+                        ul.nav.navbar-nav.navbar-right
+                            li.dropdown
+                                a.dropdown-toggle(data-toggle='dropdown', aria-expanded='false', href='#')
+                                    h4 About Me
+                                    span.caret
+                                ul.dropdown-menu(role='menu')
+                                    li(role='presentation')
+                                        a(href='#') Coming Soon
+                                    li(role='presentation')
+                                        a(href='#') Coming Soon
+                                    li(role='presentation')
+                                        a(href='#') Coming Soon
+        .projects-clean
+            .container
+                .intro
+                    h2.text-center Projects
+                    img.img-responsive.profile_pic(src='assets/img/profile_pic.jpg')
+                    h3.text-center Here are a few of the projects I've been working on
+        .proj-wrapper
+            .proj.proj-1
+                img(src='assets/img/quote.png', alt='Quote Generator')
+                span.overlay
+                    h2 Quote Generator
+                    a(href='../quotes/index.html') View Project
+                    a(href='https://github.com/MisterAJ/Random-Quote-Generator') Source Code
+            .proj.proj-2
+                img(src='assets/img/building.jpg', alt='Building')
+                span.overlay
+                    h2 Building
+                    a(href='#') View Project
+                    a(href='#') Source Code
+            .proj.proj-3
+                img(src='assets/img/loft.jpg', alt='Loft')
+                span.overlay
+                    h2 Loft
+                    a(href='#') View Project
+                    a(href='#') Source Code
+        .footer-basic
+            footer
+                .social
+                    a(href='https://www.instagram.com/misterajl/')
+                        i.icon.ion-social-instagram
+                    a(href='https://twitter.com/AJLongstreet')
+                        i.icon.ion-social-twitter
+                    a(href='https://www.facebook.com/ajlongstreet')
+                        i.icon.ion-social-facebook
+                    a(href='https://www.linkedin.com/in/aj-longstreet-650b1980/')
+                        i.icon.ion-social-linkedin
+                p.copyright AJ Longstreet © 2017
+        script(src='assets/js/jquery.min.js')
+        script(src='assets/bootstrap/js/bootstrap.min.js')
