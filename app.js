@@ -11,7 +11,7 @@ const mainController = require("./controllers/main");
 const quoteController = require("./controllers/quotes");
 
 app.use('/', mainController);
-app.use('quotes/', quoteController);
+app.use('/quotes/', quoteController);
 
 
 // view engine setup

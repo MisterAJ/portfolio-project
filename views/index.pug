@@ -1,16 +1,6 @@
 doctype html
 html
-    head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        title portfolio
-        link(rel='stylesheet', href='assets/bootstrap/css/bootstrap.min.css')
-        link(rel='stylesheet', href='assets/fonts/ionicons.min.css')
-        link(rel='stylesheet', href='assets/css/Footer-Basic.css')
-        link(rel='stylesheet', href='assets/css/Navigation-Clean1.css')
-        link(rel='stylesheet', href='assets/css/Projects-Clean.css')
-        link(rel='stylesheet', href='assets/css/quoteStyles.css')
-        link(href='https://fonts.googleapis.com/css?family=Merienda', rel='stylesheet')
+    include includes/_head
     body
         div
             nav.navbar.navbar-default.navigation-clean
@@ -60,17 +50,5 @@ html
                     h2 Loft
                     a(href='#') View Project
                     a(href='#') Source Code
-        .footer-basic
-            footer
-                .social
-                    a(href='https://www.instagram.com/misterajl/')
-                        i.icon.ion-social-instagram
-                    a(href='https://twitter.com/AJLongstreet')
-                        i.icon.ion-social-twitter
-                    a(href='https://www.facebook.com/ajlongstreet')
-                        i.icon.ion-social-facebook
-                    a(href='https://www.linkedin.com/in/aj-longstreet-650b1980/')
-                        i.icon.ion-social-linkedin
-                p.copyright AJ Longstreet © 2017
-        script(src='assets/js/jquery.min.js')
-        script(src='assets/bootstrap/js/bootstrap.min.js')
+        include includes/_footer
+
