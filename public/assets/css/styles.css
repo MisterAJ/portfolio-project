@@ -129,7 +129,6 @@ body {
 /****** TYPED ******/
 
 #title {
-    padding: 5px 0;
     font-family: "Lucida Grande", sans-serif;
     font-size: 1.25em;
     text-align: center;
@@ -146,7 +145,6 @@ body {
 #window {
     height: 250px;
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 10px;
     color: #f0f0f0;
     text-shadow: #000 0px 1px 0px;
     font-family: "Consolas", "Courier New", "Courier", serif;
